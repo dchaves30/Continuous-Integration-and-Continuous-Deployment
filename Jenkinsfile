@@ -5,8 +5,9 @@ pipeline {
       agent any
       steps {
         sh 'ls -lah'
-        echo 'Hello World'
-        echo 'Multi message'
+        sh 'echo \'Hello World\''
+        sh '''echo \'"This 
+         is a multiline"\''''
       }
     }
   }
