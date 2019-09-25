@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Udacity') {
+    stage('Build') {
       steps {
-        echo 'Hello'
+        echo 'Hello World'
       }
     }
   }
