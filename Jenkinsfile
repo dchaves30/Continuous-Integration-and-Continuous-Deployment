@@ -6,8 +6,7 @@ pipeline {
       steps {
         sh 'ls -lah'
         sh 'echo \'Hello World\''
-        sh '''echo \'"This 
-         is a multiline"\''''
+        sh 'tidy -q -e *.html'
       }
     }
   }
