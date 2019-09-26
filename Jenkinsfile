@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Upload to AWS') {
       steps {
-        s3Upload(bucket: 'udacity-project04', pathStyleAccessEnabled: true, payloadSigningEnabled: true)
+        s3Upload(bucket: 'udacity-project04', pathStyleAccessEnabled: true, payloadSigningEnabled: true, file: 'index.html')
       }
     }
   }
