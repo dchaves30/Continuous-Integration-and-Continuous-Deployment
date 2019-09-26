@@ -4,6 +4,7 @@ pipeline {
     stage('Lint HTML') {
       steps {
          {
+          withAWS(region: 'us-west-2', credentials: 'dchaves')
           sh 'tidy -q -e *.html'
         }
       }
